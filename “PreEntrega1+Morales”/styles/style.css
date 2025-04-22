@@ -1,0 +1,113 @@
+p {
+    color:violet;
+    text-align: center;
+    font-size: 20px;
+}
+
+.titulos {
+    font-size: 60px;
+    text-decoration: underline;
+    margin: 20px;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    color: blue;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-size: 40px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-size: 20px;
+}
+
+h5{
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-size: 20px;
+}
+
+body {
+    background-color:  rgb(39, 38, 38);
+
+}
+
+.pinicio {
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul {
+    color: rgb(255, 0, 255);
+    list-style-type: none;
+    text-align: center;
+}
+
+
+.listas {
+    list-style-type: none;
+    text-align: center;
+    color:violet;
+    font-size: 20px;
+    
+}
+
+.registromain {
+    text-align: center;
+    color:violet;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.marcascompus{
+    color: blue;
+    width: 50%;
+    height: 10vh;
+    background-color: blueviolet;
+    border: 2px solid violet;
+    text-align: center;
+    line-height: 100px;
+    
+}
+
+
+.subtitulos {
+    font-family: "Boldonse", system-ui;
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: blueviolet;
+
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
