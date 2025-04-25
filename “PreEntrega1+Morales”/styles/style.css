@@ -22,19 +22,16 @@ h2 {
 h3 {
     text-align: center;
     font-family: "Boldonse", system-ui;
-    font-size: 30px;
 }
 
 h4 {
     text-align: center;
     font-family: "Boldonse", system-ui;
-    font-size: 20px;
 }
 
 h5{
     text-align: center;
     font-family: "Boldonse", system-ui;
-    font-size: 20px;
 }
 
 body {
@@ -42,24 +39,63 @@ body {
 
 }
 
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 600px;
+    height: auto;
+}
+
+.logo-redes {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 200px; 
+    height: auto;
+}
+
+footer {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    background-color: blueviolet; 
+    color: white; 
+    padding: 20px; 
+    width: 100%; 
+}
+
 .pinicio {
     text-align: center;
     font-size: 20px;
 }
 
+.navbar {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center; 
+}
+
 nav ul {
-    color: rgb(255, 0, 255);
-    list-style-type: none;
-    text-align: center;
+    list-style-type: none; 
 }
 
 
 .listas {
-    list-style-type: none;
+    list-style-type: square; 
+    list-style-position: inside; 
     text-align: center;
-    color:violet;
+}
+
+.listas li {
+    color: rgb(31, 48, 204); 
     font-size: 20px;
-    
+}
+
+.listas li::marker {
+    color: violet; 
 }
 
 .registromain {
@@ -88,18 +124,11 @@ nav ul {
     font-size: 40px;
 }
 
-.navbar {
-    background-color: blueviolet;
-
-}
-
-
 .navbar ul {
     display: flex;
     list-style: none;
     padding: 0%;
     margin: 0%;
-    
 }
 
 .navbar li {
@@ -110,4 +139,33 @@ nav ul {
     text-decoration: none;
     padding: 15px 20px;
     display: block;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    background-color: #0c2deb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 0, 255);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.item img {
+    width: 30%;
+    height: auto; 
+    border: 1px solid  rgb(153, 0, 255); 
+    border-radius: 8px; 
 }
