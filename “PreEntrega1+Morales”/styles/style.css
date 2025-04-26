@@ -22,16 +22,22 @@ h2 {
 h3 {
     text-align: center;
     font-family: "Boldonse", system-ui;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); 
+
 }
 
 h4 {
     text-align: center;
     font-family: "Boldonse", system-ui;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); 
+
 }
 
 h5{
     text-align: center;
     font-family: "Boldonse", system-ui;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); 
+
 }
 
 body {
@@ -55,6 +61,15 @@ body {
     height: auto;
 }
 
+.logo-curso {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 300px; 
+    height: auto;
+    padding: 20px;
+}
+
+
 footer {
     display: flex; 
     flex-direction: column; 
@@ -65,6 +80,8 @@ footer {
     color: white; 
     padding: 20px; 
     width: 100%; 
+    margin-top: 30px; 
+
 }
 
 .pinicio {
@@ -72,30 +89,54 @@ footer {
     font-size: 20px;
 }
 
-.navbar {
+ .navbar {
     background-color: blueviolet;
     display: flex;
     justify-content: center; 
 }
 
-nav ul {
-    list-style-type: none; 
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
 }
 
 
+nav ul {
+    list-style-type: none; 
+} 
+
 .listas {
-    list-style-type: square; 
-    list-style-position: inside; 
-    text-align: center;
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left; /* Alineación más ordenada para evitar irregularidades */
+    line-height: 2; /* Espaciado uniforme entre los elementos */
+    margin: 0 auto; /* Centrar la lista en su contenedor */
+    width: fit-content; /* Ajustar el ancho al contenido */
+    padding: 10px; /* Añadir espacio interno para más limpieza */
+    border: 1px solid rgb(247, 0, 255); /* Bordes opcionales para resaltar la lista */
+    border-radius: 5px; /* Bordes redondeados para un diseño más moderno */
 }
 
 .listas li {
-    color: rgb(31, 48, 204); 
+    color: rgb(31, 48, 204);
     font-size: 20px;
+    padding-left: 10px; /* Espacio para separar el texto del marcador */
 }
 
 .listas li::marker {
-    color: violet; 
+    color: violet;
 }
 
 .registromain {
@@ -124,24 +165,6 @@ nav ul {
     font-size: 40px;
 }
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
-}
-
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
-
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -168,4 +191,11 @@ nav ul {
     height: auto; 
     border: 1px solid  rgb(153, 0, 255); 
     border-radius: 8px; 
+}
+
+.maps {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 400px; 
+    height: auto;
 }
