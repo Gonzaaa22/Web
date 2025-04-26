@@ -120,19 +120,19 @@ nav ul {
 .listas {
     list-style-type: square;
     list-style-position: inside;
-    text-align: left; /* Alineación más ordenada para evitar irregularidades */
-    line-height: 2; /* Espaciado uniforme entre los elementos */
-    margin: 0 auto; /* Centrar la lista en su contenedor */
-    width: fit-content; /* Ajustar el ancho al contenido */
-    padding: 10px; /* Añadir espacio interno para más limpieza */
-    border: 1px solid rgb(247, 0, 255); /* Bordes opcionales para resaltar la lista */
-    border-radius: 5px; /* Bordes redondeados para un diseño más moderno */
+    text-align: left; 
+    line-height: 2; 
+    margin: 0 auto; 
+    width: fit-content; 
+    padding: 10px; 
+    border: 1px solid rgb(247, 0, 255); 
+    border-radius: 5px; 
 }
 
 .listas li {
     color: rgb(31, 48, 204);
     font-size: 20px;
-    padding-left: 10px; /* Espacio para separar el texto del marcador */
+    padding-left: 10px; 
 }
 
 .listas li::marker {
@@ -159,10 +159,31 @@ nav ul {
     
 }
 
-
 .subtitulos {
     font-family: "Boldonse", system-ui;
     font-size: 40px;
+}
+
+.listasgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    background-color:rgb(153, 0, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.itemc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 0, 255);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);     
 }
 
 .grid-container {
