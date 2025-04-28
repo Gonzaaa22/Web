@@ -69,19 +69,19 @@ body {
     padding: 20px;
 }
 
-
 footer {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    background-color: blueviolet; 
-    color: white; 
-    padding: 20px; 
-    width: 100%; 
-    margin-top: 30px; 
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin-top: 30px;
+    margin: 10; 
+    box-sizing: border-box; 
 }
 
 .pinicio {
@@ -220,3 +220,59 @@ nav ul {
     max-width: 400px; 
     height: auto;
 }
+
+/* MEDIA QUERY PARA CELULARES */
+@media (max-width: 768px) {
+  
+    p, .pinicio, .listas li {
+      font-size: 16px;
+    }
+  
+    .titulos {
+      font-size: 40px;
+    }
+  
+    h2, .subtitulos {
+      font-size: 28px;
+    }
+  
+    h3, h4, h5 {
+      font-size: 24px;
+    }
+  
+    .logo-container img, .logo-redes, .logo-curso, .maps {
+      max-width: 100%;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+
+    .registromain {
+        font-size: 18px;
+    }
+  
+    .contenedor {
+      flex-direction: column;
+    }
+  
+    .grid-container, .listasgrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .item, .itemc {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    footer {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
