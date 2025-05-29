@@ -1,0 +1,18 @@
+.logo-container {
+  text-align: center;
+
+  img {
+    max-width: 600px;
+    height: auto;
+    padding: 5%;
+  }
+}
+
+.logo-redes, .logo-curso {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+.logo-redes { max-width: 200px; }
+.logo-curso { max-width: 300px; padding: 20px; }

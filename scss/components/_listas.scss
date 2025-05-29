@@ -1,0 +1,21 @@
+.listas {
+  list-style-type: square;
+  list-style-position: inside;
+  text-align: left;
+  line-height: 2;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid $text-color;
+  border-radius: 5px;
+
+  li {
+    color: rgb(31, 48, 204);
+    font-size: 20px;
+    padding-left: 10px;
+
+    &::marker {
+      color: violet;
+    }
+  }
+}

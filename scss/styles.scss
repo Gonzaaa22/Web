@@ -1,5 +1,16 @@
 @import "utilities/variables";
-@import "general";
+@import "base/reset";
+@import "base/typography";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "components/logo";
+@import "components/listas";
+@import "pages/home";
+@import "mediaqueries/responsive";
+@use 'utilities/animations';
+@use 'components/buttons';
+
 body {
   background-color: $primary-color;
 }
@@ -22,21 +33,17 @@ p, .pinicio {
   color: blue;
 }
 
-h2 {
-  font-size: 40px;
-}
+h2 { font-size: 40px; }
+h3, h4, h5 { font-size: 28px; }
 
-h3, h4, h5 {
-  font-size: 28px;
-}
-
-/* Logo */
+// === LOGOS ===
 .logo-container {
   text-align: center;
 
   img {
     max-width: 600px;
     height: auto;
+    padding: 5%;
   }
 }
 
@@ -46,92 +53,49 @@ h3, h4, h5 {
   height: auto;
 }
 
-.logo-redes {
-  max-width: 200px;
-}
+.logo-redes { max-width: 200px; }
+.logo-curso { max-width: 300px; padding: 20px; }
 
-.logo-curso {
-  max-width: 300px;
-  padding: 20px;
-}
-
-/* Navbar */
-.navbar {
-  padding: 10px !important;
-  background-color: $secondary-color !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      margin: 0 15px;
-    }
-
-    a {
-      text-decoration: none;
-      padding: 15px 20px;
-      display: block;
-    }
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-
-  img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
-  }
-}
-
-/* Footer */
+// === FOOTER ===
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $secondary-color;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 20px;
   width: 100%;
   margin-top: 30px;
   box-sizing: border-box;
-  
+
   nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; 
+    gap: 30px;
   }
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center; 
+    text-align: center;
   }
 
   ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
-    transition: color 0.3s ease; 
-    
+    transition: color 0.3s ease;
+
     &:hover {
-      color: rgb(31, 48, 204); 
+      color: rgb(31, 48, 204);
     }
   }
 }
 
-/* Contenedores */
+// === CONTENEDORES ===
 .contenedor {
   display: flex;
 }
@@ -153,7 +117,7 @@ footer {
   }
 }
 
-/* Items */
+// === ITEMS ===
 .item, .itemc {
   display: flex;
   justify-content: center;
@@ -172,7 +136,7 @@ footer {
   border-radius: 8px;
 }
 
-/* Listas */
+// === LISTAS ===
 .listas {
   list-style-type: square;
   list-style-position: inside;
@@ -195,7 +159,7 @@ footer {
   }
 }
 
-/* Marcas */
+// === MARCAS / OTROS ===
 .marcascompus {
   color: blue;
   width: 50%;
@@ -206,13 +170,11 @@ footer {
   line-height: 100px;
 }
 
-/* Registros */
 .registromain {
   text-align: center;
   color: violet;
 }
 
-/* Maps */
 .maps {
   display: block;
   margin: 0 auto;
@@ -220,40 +182,37 @@ footer {
   height: auto;
 }
 
-/* MEDIA QUERY PARA CELULARES */
+// === BOOTSTRAP NAVBAR PERSONALIZADA ===
+.navbar-brand {
+  font-family: $font-family-main;
+  font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: white !important;
+  
+  &:hover {
+    color: violet !important;
+  }
+}
+
+// === MEDIA QUERY (CELULARES) ===
 @media (max-width: 768px) {
   p, .pinicio, .listas li {
     font-size: 16px;
   }
 
-  .titulos {
-    font-size: 40px;
-  }
-
-  h2, .subtitulos {
-    font-size: 28px;
-  }
-
-  h3, h4, h5 {
-    font-size: 24px;
-  }
+  .titulos { font-size: 40px; }
+  h2, .subtitulos { font-size: 28px; }
+  h3, h4, h5 { font-size: 24px; }
 
   .logo-container img, .logo-redes, .logo-curso, .maps {
     max-width: 100%;
   }
 
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar li {
-    margin: 10px 0;
-  }
-
-  .registromain {
-    font-size: 18px;
-  }
+  .registromain { font-size: 18px; }
 
   .contenedor {
     flex-direction: column;

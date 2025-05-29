@@ -1,0 +1,35 @@
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family-main;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img,
+.logo-redes,
+.logo-curso,
+.maps {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+.logo-container img {
+  max-width: 600px;
+}
+
+.logo-redes {
+  max-width: 200px;
+}
+
+.logo-curso {
+  max-width: 300px;
+  padding: 20px;
+}
+
+.maps {
+  max-width: 400px;
+}
