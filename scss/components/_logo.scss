@@ -1,3 +1,5 @@
+@use '../utilities/variables' as vars;
+
 .logo-container {
   text-align: center;
 
@@ -14,5 +16,11 @@
   height: auto;
 }
 
-.logo-redes { max-width: 200px; }
-.logo-curso { max-width: 300px; padding: 20px; }
+.logo-redes {
+  max-width: 200px;
+}
+
+.logo-curso {
+  max-width: 300px;
+  padding: 20px;
+}

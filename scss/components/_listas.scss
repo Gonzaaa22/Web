@@ -1,3 +1,5 @@
+@use '../utilities/variables' as vars;
+
 .listas {
   list-style-type: square;
   list-style-position: inside;
@@ -6,7 +8,7 @@
   margin: 0 auto;
   width: fit-content;
   padding: 10px;
-  border: 1px solid $text-color;
+  border: 1px solid vars.$text-color;
   border-radius: 5px;
 
   li {
@@ -19,3 +21,4 @@
     }
   }
 }
+

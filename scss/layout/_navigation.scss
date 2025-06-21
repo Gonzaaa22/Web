@@ -1,0 +1,19 @@
+@use '../utilities/variables' as vars;
+
+@mixin navigation {
+  .navbar-brand {
+    font-family: vars.$font-family-main;
+    font-size: 24px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: white !important;
+
+    &:hover {
+      color: violet !important;
+    }
+  }
+}
+

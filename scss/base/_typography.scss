@@ -1,24 +1,28 @@
-body {
-  background-color: $background-color;
-}
+@use '../utilities/variables' as vars;
 
-p, .pinicio {
-  color: $text-color;
-  text-align: center;
-  font-size: 20px;
-}
+@mixin typography {
+  body {
+    background-color: vars.$background-color;
+  }
 
-.titulos, h2, h3, h4, h5 {
-  text-align: center;
-  font-family: $font-family-main;
-}
+  p, .pinicio {
+    color: vars.$text-color;
+    text-align: center;
+    font-size: 20px;
+  }
 
-.titulos {
-  font-size: 60px;
-  text-decoration: underline;
-  margin: 20px;
-  color: blue;
-}
+  .titulos, h2, h3, h4, h5 {
+    text-align: center;
+    font-family: vars.$font-family-main;
+  }
 
-h2 { font-size: 40px; }
-h3, h4, h5 { font-size: 28px; }
+  .titulos {
+    font-size: 60px;
+    text-decoration: underline;
+    margin: 20px;
+    color: blue;
+  }
+
+  h2 { font-size: 40px; }
+  h3, h4, h5 { font-size: 28px; }
+}
